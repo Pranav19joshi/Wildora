@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan a trip — Wildora</title>
+  <meta name="description" content="Send your travel dates to Wildora. We reply on WhatsApp with a plan. Jim Corbett, Char Dham, Nainital, Rishikesh, and wider Uttarakhand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-name">WILDORA</span><span class="brand-sub">Ramnagar · Uttarakhand</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><rect width="16" height="1.8" rx="1" fill="currentColor"/><rect y="5.1" width="16" height="1.8" rx="1" fill="currentColor"/><rect y="10.2" width="16" height="1.8" rx="1" fill="currentColor"/></svg> Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="services.html">What we arrange</a></li>
+        <li><a href="about.html">Who we are</a></li>
+        <li><a class="nav-cta" href="enquire.html" aria-current="page">Plan a trip</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="crumbs"><a href="index.html">Home</a> <span>/</span> <span>Plan a trip</span></nav>
+        <h1>Send dates.<br>We reply on WhatsApp.</h1>
+        <p class="lede">Fill in where you want to go and when. The form opens a pre-filled WhatsApp message to the right advisor. Nothing is stored on this site.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="enquiry-layout">
+
+        <div>
+          <span class="form-section-label">Send enquiry to</span>
+          <div class="advisor-toggle" role="radiogroup" aria-label="Choose advisor">
+            <div class="adv-radio">
+              <input type="radio" id="adv-varun" name="advisor" value="varun" checked>
+              <label class="adv-label" for="adv-varun">
+                <span class="adv-name">Varun Singh Rawat</span>
+                <span class="adv-role">Jim Corbett &amp; custom itineraries</span>
+              </label>
+            </div>
+            <div class="adv-radio">
+              <input type="radio" id="adv-sanskar" name="advisor" value="sanskar">
+              <label class="adv-label" for="adv-sanskar">
+                <span class="adv-name">Sanskar Bhardwaj</span>
+                <span class="adv-role">Char Dham, stays &amp; family trips</span>
+              </label>
+            </div>
+          </div>
+
+          <form id="enquiry-form" novalidate>
+            <div class="form-row2">
+              <div class="field">
+                <label for="f-name">Your name <span class="req" aria-label="required">*</span></label>
+                <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Priya Kapoor">
+              </div>
+              <div class="field">
+                <label for="f-phone">WhatsApp / phone <span class="req" aria-label="required">*</span></label>
+                <input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+91 98765 43210">
+              </div>
+            </div>
+            <div class="form-row2">
+              <div class="field">
+                <label for="f-dest">Destination <span class="req" aria-label="required">*</span></label>
+                <select id="f-dest" name="destination" required>
+                  <option value="">Choose a destination…</option>
+                  <option value="Jim Corbett">Jim Corbett</option>
+                  <option value="Char Dham">Char Dham</option>
+                  <option value="Nainital">Nainital</option>
+                  <option value="Rishikesh">Rishikesh</option>
+                  <option value="Wider Uttarakhand (mixed circuit)">Wider Uttarakhand</option>
+                  <option value="Custom / not sure yet">Custom / not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-date">Approximate travel date</label>
+                <input id="f-date" name="date" type="date">
+              </div>
+            </div>
+            <div class="form-row2">
+              <div class="field">
+                <label for="f-people">Number of travellers</label>
+                <input id="f-people" name="travellers" type="number" min="1" max="50" value="2">
+              </div>
+              <div class="field">
+                <label for="f-type">Trip type</label>
+                <select id="f-type" name="triptype">
+                  <option value="">Select…</option>
+                  <option>Safari</option>
+                  <option>Pilgrimage (Char Dham)</option>
+                  <option>Family holiday</option>
+                  <option>Wildlife photography</option>
+                  <option>Trekking</option>
+                  <option>Mixed / weekend getaway</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-notes">Anything we should know</label>
+              <textarea id="f-notes" name="notes" placeholder="Kids, elderly parents, budget band, train arrival at Ramnagar, specific lodges in mind…"></textarea>
+            </div>
+            <button class="btn pine" type="submit" style="width:100%;justify-content:center;padding:15px 24px;font-size:15px;">Open WhatsApp with these details</button>
+            <p class="form-note">Nothing is stored on this site. WhatsApp must be installed on your phone or open in browser.</p>
+          </form>
+        </div>
+
+        <aside>
+          <div class="direct-box">
+            <h3>Or contact directly</h3>
+            <div class="direct-person">
+              <div class="direct-person-name">Varun Singh Rawat</div>
+              <div class="direct-person-role">Lead Travel Advisor — Corbett &amp; custom trips</div>
+              <div class="direct-links">
+                <a class="direct-link" href="tel:+919548561308">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011 1.18 2 2 0 013 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  +91 95485 61308
+                </a>
+                <a class="direct-link" href="https://wa.me/919548561308?text=Hi%20Varun%2C%20I%27d%20like%20to%20plan%20a%20trip%20with%20Wildora.">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                  WhatsApp Varun
+                </a>
+              </div>
+            </div>
+            <div class="direct-person">
+              <div class="direct-person-name">Sanskar Bhardwaj</div>
+              <div class="direct-person-role">Safari &amp; Stays — Char Dham, family trips</div>
+              <div class="direct-links">
+                <a class="direct-link" href="tel:+919193043188">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011 1.18 2 2 0 013 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  +91 91930 43188
+                </a>
+                <a class="direct-link" href="https://wa.me/919193043188?text=Hi%20Sanskar%2C%20I%27d%20like%20to%20plan%20a%20trip%20with%20Wildora.">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                  WhatsApp Sanskar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="office-box">
+            <h3>Office</h3>
+            <dl>
+              <dt>Address</dt>
+              <dd>Ramnagar,<br>Uttarakhand 244715</dd>
+              <dt>Nearest railway</dt>
+              <dd>Ramnagar station<br><small style="font-family:var(--sans);font-size:13px;color:var(--ink-soft);">Ranikhet Express from Old Delhi</small></dd>
+            </dl>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="footer-wordmark">WILDORA</span><p class="footer-tagline">Travel desk in Ramnagar. Safaris, yatras, and hill stays across Uttarakhand.</p><address class="footer-addr">Ramnagar, Uttarakhand 244715</address></div>
+        <div class="footer-col"><h4>Destinations</h4><ul><li><a href="destinations/jim-corbett.html">Jim Corbett</a></li><li><a href="destinations/char-dham.html">Char Dham</a></li><li><a href="destinations/nainital.html">Nainital</a></li><li><a href="destinations/rishikesh.html">Rishikesh</a></li><li><a href="destinations/uttarakhand.html">Wider Uttarakhand</a></li></ul></div>
+        <div class="footer-col"><h4>Desk</h4><ul><li><a href="services.html">What we arrange</a></li><li><a href="about.html">Who we are</a></li></ul></div>
+        <div class="footer-col"><h4>Call us</h4><ul><li><a href="tel:+919548561308">Varun — 95485 61308</a></li><li><a href="tel:+919193043188">Sanskar — 91930 43188</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Wildora, Ramnagar</span></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
